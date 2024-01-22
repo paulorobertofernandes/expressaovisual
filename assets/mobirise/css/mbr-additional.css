@@ -1,4 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Hind+Siliguri:300,400,500,600,700&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Rubik:300,400,500,600,700,800,900,300i,400i,500i,600i,700i,800i,900i&display=swap);
 
 
@@ -9,7 +8,7 @@ body {
   font-family: Rubik;
 }
 .display-1 {
-  font-family: 'Hind Siliguri', sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-size: 4.25rem;
   font-display: swap;
 }
@@ -687,12 +686,12 @@ section.lazy-placeholder:after {
 }
 .cid-u21Ruz3uF9 .navbar {
   padding: .5rem 0;
-  background: #232323;
+  background: #ffffff;
   transition: none;
   min-height: 77px;
 }
 .cid-u21Ruz3uF9 .navbar-dropdown.bg-color.transparent.opened {
-  background: #232323;
+  background: #ffffff;
 }
 .cid-u21Ruz3uF9 a {
   font-style: normal;
@@ -783,7 +782,7 @@ section.lazy-placeholder:after {
   padding-bottom: 0;
 }
 .cid-u21Ruz3uF9 .dropdown .dropdown-menu {
-  background: #232323;
+  background: #ffffff;
   visibility: hidden;
   display: block;
   position: absolute;
@@ -1129,7 +1128,7 @@ section.lazy-placeholder:after {
   color: #708090;
 }
 .cid-u21Tg7CG6V {
-  padding-top: 30px;
+  padding-top: 0px;
   padding-bottom: 0px;
   background-color: #ffffff;
 }
@@ -1209,8 +1208,8 @@ section.lazy-placeholder:after {
   color: #708090;
 }
 .cid-u21TL9vFbM {
-  padding-top: 45px;
-  padding-bottom: 45px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   background-color: #ffffff;
 }
 .cid-u21TL9vFbM h2 {
