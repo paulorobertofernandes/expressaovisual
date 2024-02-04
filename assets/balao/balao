@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Estilos para o balão de texto */
+        .floating-balloon {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px;
+            background-color: #3498db;
+            color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            max-width: 200px;
+            display: none; /* Inicialmente oculto */
+        }
+
+        /* Estilos para o ícone de fechar */
+        .close-icon {
+            cursor: pointer;
+            float: right;
+            font-size: 18px;
+        }
+    </style>
+    <title>Floating Balloon</title>
+</head>
+<body>
+
+    <!-- Conteúdo da sua página vai aqui -->
+
+    <!-- Balão de Texto Flutuante -->
+    <div id="floating-balloon" class="floating-balloon">
+        <span class="close-icon" onclick="closeBalloon()">×</span>
+        <p id="balloon-message">Entre em contato, e garanta registro de dominio e hospedagem gratis agora!</p>
+    </div>
+
+    <!-- Adicione o script JavaScript no final para garantir que o DOM esteja carregado -->
+    <script>
+        // Função para exibir o balão
+        function showBalloon() {
+            document.getElementById('floating-balloon').style.display = 'block';
+        }
+
+        // Função para fechar o balão
+        function closeBalloon() {
+            document.getElementById('floating-balloon').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
