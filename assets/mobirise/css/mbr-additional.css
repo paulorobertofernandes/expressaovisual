@@ -1110,22 +1110,22 @@ section.lazy-placeholder:after {
   color: #232323;
 }
 .cid-u21T8j4vXB H1 {
-  color: #4682b4;
+  color: #708090;
 }
 .cid-u21T8j4vXB .mbr-text,
 .cid-u21T8j4vXB .mbr-section-btn {
   color: #708090;
 }
 .cid-u22fAwTwXw {
-  padding-top: 90px;
+  padding-top: 60px;
   padding-bottom: 15px;
-  background-color: #4682b4;
+  background-color: #465052;
 }
 .cid-u22fAwTwXw .mbr-section-subtitle {
-  color: #767676;
+  color: #efefef;
 }
 .cid-u22fAwTwXw H2 {
-  color: #ffffff;
+  color: #efefef;
 }
 .cid-u21Tg7CG6V {
   padding-top: 15px;
@@ -1208,9 +1208,9 @@ section.lazy-placeholder:after {
   color: #4682b4;
 }
 .cid-u21TL9vFbM {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  background-image: url("../../../assets/images/white-simple-photocentric-zoom-virtual-background-1280x720.png");
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-image: url("../../../assets/images/minimalist-tech-company-zoom-virtual-background-4-1280x720.png");
 }
 .cid-u21TL9vFbM h2 {
   text-align: left;
@@ -1284,10 +1284,61 @@ section.lazy-placeholder:after {
 .cid-u21TL9vFbM H2 {
   color: #4682b4;
 }
+.cid-u46CV88yjk {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #465052;
+}
+.cid-u46CV88yjk .mbr-section-subtitle {
+  color: #efefef;
+}
+.cid-u46CV88yjk .formoid {
+  margin: auto;
+}
+.cid-u46CV88yjk .form-control {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.cid-u46CV88yjk .input-group-btn .btn {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin: 0 !important;
+}
+.cid-u46CV88yjk input[type="email"] {
+  border-radius: 100px !important;
+}
+.cid-u46CV88yjk a:not([href]):not([tabindex]) {
+  color: #fff;
+}
+.cid-u46CV88yjk a.btn-white:not([href]):not([tabindex]) {
+  color: #333;
+}
+@media (max-width: 768px) {
+  .cid-u46CV88yjk .mbr-form .row {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  .cid-u46CV88yjk .form-group,
+  .cid-u46CV88yjk .input-group-btn,
+  .cid-u46CV88yjk .input-group-btn .btn {
+    max-width: 300px;
+    width: 100%;
+  }
+}
+@media (min-width: 769px) {
+  .cid-u46CV88yjk .mbr-form .row > * {
+    padding: 0 0.5rem;
+  }
+}
+.cid-u46CV88yjk H2 {
+  color: #efefef;
+}
 .cid-u21TSAmFsq {
   padding-top: 45px;
   padding-bottom: 45px;
-  background-color: #ffffff;
+  background-image: url("../../../assets/images/white-simple-photocentric-zoom-virtual-background-1-1280x720.png");
 }
 .cid-u21TSAmFsq h3 {
   text-align: center;
@@ -1349,7 +1400,7 @@ section.lazy-placeholder:after {
   min-height: 188px;
 }
 .cid-u21TUus0Up H2 {
-  color: #4682b4;
+  color: #708090;
 }
 .cid-u21TUus0Up LABEL {
   color: #708090;
@@ -1424,7 +1475,7 @@ section.lazy-placeholder:after {
   color: #708090;
 }
 .cid-u21TVOvb8f .links {
-  color: #708090;
+  color: #465052;
 }
 .cid-u21Ruz3uF9 .navbar {
   padding: .5rem 0;
