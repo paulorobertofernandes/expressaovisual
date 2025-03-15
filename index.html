@@ -1,69 +1,179 @@
 <!DOCTYPE html>
 <html  >
 <head>
-  <!-- Site made with Paulo Roberto Fernandes v5.0.29, -->
+  <!-- Site made with Mobirise Website Builder v4.12.4, https://mobirise.com -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Mobirise v5.0.29, mobirise.com">
-  <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:image:src" content="assets/images/index-meta.png">
-  <meta property="og:image" content="assets/images/index-meta.png">
-  <meta name="twitter:title" content="Personal Web - Eu posso te ajudar!">
+  <meta name="generator" content="Mobirise v4.12.4, mobirise.com">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <link rel="shortcut icon" href="assets/images/logo.expressaovisual-96x96.png" type="image/x-icon">
-  <meta name="description" content="Design grafico criação de sites, lojas virtuais, aplicativos, ilustrações personalizadas e mais...">
+  <meta name="description" content="Seja o mestre da sua narrativa visual com os serviços de design gráfico excepcionais que oferecemos. Na Expressão Visual, transformamos ideias em imagens, dando vida a conceitos e elevando a sua presença visual.">
   
   
-  <title>Personal Web - Eu posso te ajudar!</title>
+  <title>Expressão Visual - Dando vida a conceitos e elevando a sua presença visual.</title>
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
-  <link rel="stylesheet" href="assets/web/assets/mobirise-icons-bold/mobirise-icons-bold.css">
+  <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
-  <link rel="stylesheet" href="assets/tether/tether.min.css">
   <link rel="stylesheet" href="assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="assets/as-pie-progress/css/progress.min.css">
+  <link rel="stylesheet" href="assets/tether/tether.min.css">
   <link rel="stylesheet" href="assets/socicon/css/styles.css">
   <link rel="stylesheet" href="assets/theme/css/style.css">
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
   
   
   
-  
 </head>
 <body>
-    <title>Botão WhatsApp - Paulo R.Fernandes</title>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
-      <style>
-          .whatsapp-link {
-              position: fixed;
-              width: 80px;
-              height: 80px;
-              bottom: 60px;
-              right: 60px;
-              background-color: #333333;
-              color: #fff;
-              border-radius: 50px;
-              text-align: center;
-              font-size: 50px;
-              box-shadow:  #f5bb15;
-              z-index: 1000;
-          }
-   
-          .fa-whatsapp {
-              margin-top: 16px;
-          }
-      </style>
-  </head>
-  <body>
-      <a class="whatsapp-link" href="https://wa.me/5516992458763/?text=Olá! *Paulo, gostaria de informações*" target="_blank">
-          <i class="fa fa-whatsapp"></i>
-      </a>
-  
-  <section class="menu cid-usYh3Jhw5C" once="menu" id="menu1-0">
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Popup Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .exit-button {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      font-size: 20px;
+      cursor: pointer;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .popup {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 300px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      background: white;
+      border-radius: 10px;
+      text-align: center;
+      z-index: 1000;
+    }
+
+    .popup img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    .overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 999;
+    }
+
+    .popup a {
+      display: inline-block;
+      margin-top: 10px;
+      text-decoration: none;
+      color: #007BFF;
+      font-weight: bold;
+    }
+
+    .popup a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="exit-button" id="exitButton">X</div>
+
+  <div class="overlay" id="overlay"></div>
+
+  <div class="popup" id="popup">
+    <img src="https://via.placeholder.com/300" alt="Imagem de exemplo">
+    <p>Não vá embora ainda! Confira nosso conteúdo exclusivo.</p>
+    <a href="https://exemplo.com" target="_blank">Visite nossa página</a>
+  </div>
+
+  <script>
+    const exitButton = document.getElementById('exitButton');
+    const popup = document.getElementById('popup');
+    const overlay = document.getElementById('overlay');
+
+    exitButton.addEventListener('mouseenter', () => {
+      popup.style.display = 'block';
+      overlay.style.display = 'block';
+    });
+
+    overlay.addEventListener('click', () => {
+      popup.style.display = 'none';
+      overlay.style.display = 'none';
+    });
+  </script>
+
+</body>
+</html>
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Site</title>
+</head>
+<body>
+</html>
+
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>	
+    <meta charset="UTF-8">
+        <title>Botão WhatsApp - Paulo R.Fernandes</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+        <style>
+            .whatsapp-link {
+                position: fixed;
+                width: 80px;
+                height: 80px;
+                bottom: 60px;
+                right: 60px;
+                background-color: #4682b4;
+                color: #fff;
+                border-radius: 50px;
+                text-align: center;
+                font-size: 50px;
+                box-shadow:  #fff;
+                z-index: 1000;
+            }
+     
+            .fa-whatsapp {
+                margin-top: 16px;
+            }
+        </style>
+    </head>
+    <body>
+        <a class="whatsapp-link" href="https://wa.me/5516992458763/?text=Olá,estou no site da *Expressão Visual* e gostaria de algumas informações" target="_blank">
+            <i class="fa fa-whatsapp"></i>
+        </a>
+    </body>
+    </html>
+  <section class="menu cid-u21Ruz3uF9" once="menu" id="menu1-0">
 
     
 
-    <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
+    <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm bg-color transparent">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <div class="hamburger">
                 <span></span>
@@ -76,29 +186,32 @@
             <div class="navbar-brand">
                 <span class="navbar-logo">
                     <a href="index.html#footer5-8">
-                         <img src="assets/images/logo.expressaovisual-96x96.png" alt="Expressão Visual Desde 2007" title="Expressão Visual Desde 2007" style="height: 3.8rem;">
+                         <img src="assets/images/logo.expressaovisual-96x96.png" alt="Dando vida a conceitos e elevando a sua presença visual." title="Dando vida a conceitos e elevando a sua presença visual." style="height: 4.5rem;">
                     </a>
                 </span>
-                <span class="navbar-caption-wrap"><a class="navbar-caption text-warning text-primary display-2" href="index.html#top">Personal Web</a></span>
+                <span class="navbar-caption-wrap"><a class="navbar-caption text-primary display-5" href="index.html#content4-9">
+                        Expressão Visual</a></span>
             </div>
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item">
-                    <a class="nav-link link text-primary display-4" href="index.html#features1-2">Serviços</a>
-                </li>
+                    <a class="nav-link link text-secondary display-4" href="index.html#content4-9">
+                        
+                        Serviços</a>
+                </li><li class="nav-item"><a class="nav-link link text-secondary display-4" href="index.html#form1-7">
+                        
+                        Contato</a></li>
                 <li class="nav-item">
-                    <a class="nav-link link text-primary display-4" href="index.html#progress-bars2-6">
+                    <a class="nav-link link text-secondary display-4" href="index.html#features11-5">
                         
-                        Sobre</a>
-                </li><li class="nav-item"><a class="nav-link link text-primary display-4" href="index.html#form1-5">
-                        
-                        Contato</a></li></ul>
+                        Porque nos escolher</a>
+                </li></ul>
             
         </div>
     </nav>
 </section>
 
-<section class="engine"><a href="https://mobirise.info/w">free html5 templates</a></section><section class="header9 cid-usYh9Gb2Ci mbr-fullscreen mbr-parallax-background" id="header9-1">
+<section class="engine"><a href="https://mobirise.info/a">online web builder</a></section><section class="header9 cid-u21T8j4vXB mbr-fullscreen mbr-parallax-background" id="header9-1">
 
     
 
@@ -109,156 +222,194 @@
         <div class="media-container-column mbr-white">
             <h1 class="mbr-section-title align-left mbr-bold pb-3 mbr-fonts-style display-1">Expressão Visual</h1>
             
-            <p class="mbr-text align-left pb-3 mbr-fonts-style display-5">"Transforme ideias em <strong>experiências visuais únicas</strong>&nbsp;<br><strong>design gráfico</strong> <strong>e web</strong> sob medida para <strong>destacar sua marca no digital</strong>."</p>
-            <div class="mbr-section-btn align-left"><a class="btn btn-md btn-primary display-4" href="index.html#features1-2"><span class="mbrib-rocket mbr-iconfont mbr-iconfont-btn"></span>Serviços</a></div>
+            <p class="mbr-text align-left pb-3 mbr-fonts-style display-5">
+                Seja o mestre da sua <strong>narrativa visual</strong> com os <strong>serviços de design gráfico</strong> excepcionais que oferecemos. Na <strong>Expressão Visual</strong>, transformamos ideias em imagens, <strong>dando vida a conceitos</strong> e elevando a <strong>sua presença visual</strong>.
+            </p>
+            <div class="mbr-section-btn align-left"><a class="btn btn-md btn-secondary display-4" href="index.html#content4-9">SAIBA MAIS</a></div>
         </div>
     </div>
 
     
 </section>
 
-<section class="features1 cid-uy3VOSHOws" id="features1-2">
+<section class="mbr-section content4 cid-u22fAwTwXw" id="content4-9">
+
+    
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="title col-12 col-md-8">
+                <h2 class="align-center pb-3 mbr-fonts-style display-2"><strong>Serviços</strong></h2>
+                <h3 class="mbr-section-subtitle align-center mbr-light mbr-fonts-style display-5">Todos nossos projetos são visualizados pelos clientes antes de sua contratação.</h3>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="features7 cid-u21Tg7CG6V" id="features7-2">
     
     
 
     
     <div class="container">
-        <div class="media-container-row">
+        <div class="row justify-content-center">
 
             <div class="card p-3 col-12 col-md-6 col-lg-4">
-                <div class="card-img pb-3">
-                    <span class="mbr-iconfont mbrib-responsive" style="color: rgb(77, 135, 183); fill: rgb(77, 135, 183);"></span>
-                </div>
-                <div class="card-box">
-                    <h4 class="card-title py-3 mbr-fonts-style display-5"><strong>
-                        Presença online marcante</strong></h4>
-                    <p class="mbr-text mbr-fonts-style display-7">
-                        Websites, banners digitais, e posts para redes sociais -<strong> garantido que sua presença online seja visualmente atraente</strong> e alinhada com sua marca.
-                    </p>
+                <div class="media">
+                    <div class="card-img pr-2">
+                        <a href="index.html#features7-2"><span class="mbr-iconfont mobi-mbri-contact-form mobi-mbri" style="color: rgb(70, 130, 180); fill: rgb(70, 130, 180);"></span></a>
+                    </div>
+                    <div class="card-box media-body">
+                        <h4 class="card-title py-3 mbr-fonts-style display-7"><strong>Identidade Visual Única</strong></h4>
+                        <p class="mbr-text mbr-fonts-style display-7">
+                           Desenvolvemos <strong>logotipos</strong> e elementos visuais que representam a <strong>essência</strong> da sua marca, destacando-a em meio à concorrência.
+                        </p>
+                    </div>
                 </div>
             </div>
 
             <div class="card p-3 col-12 col-md-6 col-lg-4">
-                <div class="card-img pb-3">
-                    <span class="mbr-iconfont mbrib-credit-card" style="color: rgb(77, 135, 183); fill: rgb(77, 135, 183);"></span>
-                </div>
-                <div class="card-box">
-                    <h4 class="card-title py-3 mbr-fonts-style display-5"><strong>Identidade Visual Única</strong></h4>
-                    <p class="mbr-text mbr-fonts-style display-7">&nbsp;Logotipos e elementos visuais que <strong>representam a essência da sua marca</strong>, destacando-a em meio à <br>concorrência.
-                    </p>
+                <div class="media"> 
+                    <div class="card-img pr-2">
+                        <a href="index.html#header9-1"><span class="mbr-iconfont mobi-mbri-image-slider mobi-mbri" style="color: rgb(70, 130, 180); fill: rgb(70, 130, 180);"></span></a>
+                    </div>
+                    <div class="card-box media-body">
+                        <h4 class="card-title py-3 mbr-fonts-style display-7"><strong>Design de Materiais Impressos</strong></h4>
+                        <p class="mbr-text mbr-fonts-style display-7">
+                           De cartões de visita a panfletos e banners, <strong>criamos peças que comunicam </strong>sua mensagem de forma <strong>impactante</strong> e memorável.
+                        </p>
+                    </div>
                 </div>
             </div>
 
             <div class="card p-3 col-12 col-md-6 col-lg-4">
-                <div class="card-img pb-3">
-                    <span class="mbr-iconfont mbrib-rocket" style="color: rgb(77, 135, 183); fill: rgb(77, 135, 183);"></span>
-                </div>
-                <div class="card-box">
-                    <h4 class="card-title py-3 mbr-fonts-style display-5"><strong>Ilustrações Personalizadas</strong></h4>
-                    <p class="mbr-text mbr-fonts-style display-7">
-                        Transforme ideias em <strong>ilustrações envolventes</strong>, seja para livros, campanhas publicitárias ou <strong>materiais <br>promocionais</strong>.
-                    </p>
+                <div class="media">
+                    <div class="card-img pr-2">
+                        <a href="index.html#header9-1"><span class="mbr-iconfont mobi-mbri-laptop mobi-mbri" style="color: rgb(70, 130, 180); fill: rgb(70, 130, 180);"></span></a>
+                    </div>
+                    <div class="media-body card-box">
+                        <h4 class="card-title py-3 mbr-fonts-style display-7"><strong>Presença Online Marcante</strong></h4>
+                        <p class="mbr-text mbr-fonts-style display-7"><strong>
+                           Websites</strong>, banners digitais, e <strong>posts para redes sociais</strong> - garantimos que sua presença online seja <strong>visualmente atraente</strong> e alinhada com sua marca.
+                        </p>
+                    </div>
                 </div>
             </div>
 
             
-
         </div>
-
     </div>
-
 </section>
 
-<section class="features1 cid-uy3XNYeMmA" id="features1-3">
+<section class="features7 cid-u22VFu8Nmh" id="features7-a">
     
     
 
     
     <div class="container">
-        <div class="media-container-row">
+        <div class="row justify-content-center">
 
             <div class="card p-3 col-12 col-md-6 col-lg-4">
-                <div class="card-img pb-3">
-                    <span class="mbr-iconfont mbrib-gift" style="color: rgb(77, 135, 183); fill: rgb(77, 135, 183);"></span>
-                </div>
-                <div class="card-box">
-                    <h4 class="card-title py-3 mbr-fonts-style display-5"><strong>Design de Embalagens Criativas</strong></h4>
-                    <p class="mbr-text mbr-fonts-style display-7"><strong>Destaque-se</strong> nas prateleiras com embalagens que <strong>cativam e comunicam</strong> os valores do <strong>seu produto </strong><br>e sua marca.</p>
+                <div class="media">
+                    <div class="card-img pr-2">
+                        <a href="index.html#features7-2"><span class="mbr-iconfont mobi-mbri-drag-n-drop-2 mobi-mbri" style="color: rgb(70, 130, 180); fill: rgb(70, 130, 180);"></span></a>
+                    </div>
+                    <div class="card-box media-body">
+                        <h4 class="card-title py-3 mbr-fonts-style display-7"><strong>Ilustrações Personalizadas</strong></h4>
+                        <p class="mbr-text mbr-fonts-style display-7">Transformamos <strong>ideias em ilustrações</strong> envolventes, seja para livros, campanhas publicitárias ou <strong>materiais promocionais.</strong></p>
+                    </div>
                 </div>
             </div>
 
             <div class="card p-3 col-12 col-md-6 col-lg-4">
-                <div class="card-img pb-3">
-                    <span class="mbr-iconfont mbrib-print" style="color: rgb(77, 135, 183); fill: rgb(77, 135, 183);"></span>
-                </div>
-                <div class="card-box">
-                    <h4 class="card-title py-3 mbr-fonts-style display-5"><strong>Design de Materiais Impressos</strong></h4>
-                    <p class="mbr-text mbr-fonts-style display-7">De cartões de visita a panfletos e banners,&nbsp;&nbsp;<strong>peças que comunicam</strong> sua mensagem de <strong>forma impactante</strong> e memorável.</p>
+                <div class="media"> 
+                    <div class="card-img pr-2">
+                        <a href="index.html#header9-1"><span class="mbr-iconfont mobi-mbri-delivery mobi-mbri" style="color: rgb(70, 130, 180); fill: rgb(70, 130, 180);"></span></a>
+                    </div>
+                    <div class="card-box media-body">
+                        <h4 class="card-title py-3 mbr-fonts-style display-7"><strong>Design de Embalagens Criativas</strong></h4>
+                        <p class="mbr-text mbr-fonts-style display-7"><strong>Destaque-se </strong>nas prateleiras com <strong>embalagens que cativam e comunicam os valores</strong> do seu produto.</p>
+                    </div>
                 </div>
             </div>
 
             <div class="card p-3 col-12 col-md-6 col-lg-4">
-                <div class="card-img pb-3">
-                    <span class="mbr-iconfont mbrib-website-theme" style="color: rgb(77, 135, 183); fill: rgb(77, 135, 183);"></span>
-                </div>
-                <div class="card-box">
-                    <h4 class="card-title py-3 mbr-fonts-style display-5"><strong>Atividades escolares</strong></h4>
-                    <p class="mbr-text mbr-fonts-style display-7">Atividades escolares impressas, ou em <strong>apresentações divertidas</strong>. Um verdadeiro convite para crianças <strong>aprenderem brincando.</strong></p>
+                <div class="media">
+                    <div class="card-img pr-2">
+                        <a href="index.html#header9-1"><span class="mbr-iconfont mobi-mbri-responsive-2 mobi-mbri" style="color: rgb(70, 130, 180); fill: rgb(70, 130, 180);"></span></a>
+                    </div>
+                    <div class="media-body card-box">
+                        <h4 class="card-title py-3 mbr-fonts-style display-7"><strong>Apresentações e atividades escolares</strong></h4>
+                        <p class="mbr-text mbr-fonts-style display-7">Atividades escolares <strong>impressas</strong>, ou em <strong>apresentações divertidas</strong>. Um verdadeiro convite para crianças <strong>aprenderem brincando.</strong></p>
+                    </div>
                 </div>
             </div>
 
             
-
         </div>
-
     </div>
-
 </section>
 
-<section class="mbr-section form1 cid-uFjXSUh5Dh mbr-parallax-background" id="form1-5">
+<section class="features11 cid-u21TL9vFbM mbr-parallax-background" id="features11-5">
 
     
 
-    <div class="mbr-overlay" style="opacity: 0; background-color: rgb(255, 255, 255);">
-    </div>
+    
+
+    <div class="container">   
+        <div class="col-md-12">
+            <div class="media-container-row">
+                <div class="mbr-figure m-auto" style="width: 30%;">
+                    <a href="index.html#form1-7"><img src="assets/images/ev.gif" alt="Entre em contato conosco para iniciar a jornada da sua expressão visual única." title="Entre em contato conosco para iniciar a jornada da sua expressão visual única."></a>
+                </div>
+                <div class=" align-left aside-content">
+                    <h2 class="mbr-title pt-2 mbr-fonts-style display-2"><strong><br>Por que nos escolher?</strong></h2>
+                    <div class="mbr-section-text">
+                        <p class="mbr-text mb-5 pt-3 mbr-light mbr-fonts-style display-7"><strong>Profissionalismo</strong>: Comprometemo-nos em entregar projetos de alta qualidade, alinhados com suas expectativas.
+<br>
+<br><strong>Criatividade Ilimitada:</strong> Nossa equipe de designers está pronta para transformar suas visões em realidade, com soluções inovadoras e criativas.
+<br>
+<br><strong>Parceria Estratégica: </strong>Trabalhamos em estreita colaboração com você, garantindo que cada projeto atenda às suas necessidades e objetivos.
+<br>
+<br><strong>Descubra o poder do design visual</strong> com a Expressão Visual. Juntos, vamos criar uma linguagem visual única para a sua marca.<strong> <a href="index.html#form1-7" class="text-danger">Entre em contato conosco para iniciar a jornada da sua expressão visual única.</a></strong></p>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div> 
+    </div>          
+</section>
+
+<section class="mbr-section form3 cid-u46CV88yjk" id="form3-f">
+
+    
+
+    
+
     <div class="container">
         <div class="row justify-content-center">
             <div class="title col-12 col-lg-8">
-                <h2 class="mbr-section-title align-center pb-3 mbr-fonts-style display-2"><strong>
-                    Vamos conversar</strong></h2>
-                <h3 class="mbr-section-subtitle align-center mbr-light pb-3 mbr-fonts-style display-5">
-                    Envie sua mensagem e seus <strong>dados de contato,</strong> se preferir chame no <strong>whatsapp</strong> tocando no botão ao lado.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</h3>
+                <h2 class="align-center pb-2 mbr-fonts-style display-1"><strong>Imperdível</strong></h2>
+                <h3 class="mbr-section-subtitle align-center pb-5 mbr-light mbr-fonts-style display-5">Site completo com design moderno, <strong>adaptável</strong> a qualquer dispositivo com <strong>registro de domínio e hospedagem grátis</strong> um ano inteiro!</h3>
             </div>
         </div>
-    </div>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="media-container-column col-lg-8" data-form-type="formoid">
+
+        <div class="row py-2 justify-content-center">
+            <div class="col-12 col-lg-6  col-md-8 " data-form-type="formoid">
                 <!---Formbuilder Form--->
-                <form action="https://mobirise.eu/" method="POST" class="mbr-form form-with-styler" data-form-title="Mobirise Form"><input type="hidden" name="email" data-form-email="true" value="dX/jyJ2Yz7wZkjIipwtcUr9Lm/PL2FJT+TW0Kh/Rca5t5Xnku9dmfJ35o6PCOk0eA9hNV4jQwRC0+2UP7184wrURis2ti6nRSCQ3+A5pi+QM+smEy50js5QK+BD4WBFH">
+                <form action="https://mobirise.com/" method="POST" class="mbr-form form-with-styler" data-form-title="Mobirise Form"><input type="hidden" name="email" data-form-email="true" value="1vPuIOiaNaLxnq617qlMfgLF50EdxD+zxad3r5AWLqXhSMPl/US5Z16YqANXKoEtGmtHmrPsQA/VOr3VPRIofRzxwumxNRD+eOO6DeC5/ZQjbuGI26v+e5beEyUSUUFg">
                     <div class="row">
-                        <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Opa! Recebemos sua mensagem e em breve entraremos em contato.</div>
+                        <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Aguarde boas Noticias!</div>
                         <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">
                         </div>
                     </div>
                     <div class="dragArea row">
-                        <div class="col-md-4  form-group" data-for="name">
-                            <label for="name-form1-5" class="form-control-label mbr-fonts-style display-7"><strong>Nome</strong></label>
-                            <input type="text" name="name" data-form-field="Name" required="required" class="form-control display-7" id="name-form1-5">
+                        <div class="form-group col" data-for="email">
+                            <input type="email" name="email" placeholder="E-mail" data-form-field="Email" required="required" class="form-control display-7" id="email-form3-f">
                         </div>
-                        <div class="col-md-4  form-group" data-for="email">
-                            <label for="email-form1-5" class="form-control-label mbr-fonts-style display-7"><strong>Seu melhor E-mail</strong></label>
-                            <input type="email" name="email" data-form-field="Email" required="required" class="form-control display-7" id="email-form1-5">
-                        </div>
-                        <div data-for="phone" class="col-md-4  form-group">
-                            <label for="phone-form1-5" class="form-control-label mbr-fonts-style display-7"><strong>Tel./Whatsapp</strong></label>
-                            <input type="tel" name="phone" data-form-field="Phone" class="form-control display-7" id="phone-form1-5">
-                        </div>
-                        <div data-for="message" class="col-md-12 form-group">
-                            <label for="message-form1-5" class="form-control-label mbr-fonts-style display-7"><strong>Mensagem</strong></label>
-                            <textarea name="message" data-form-field="Message" class="form-control display-7" id="message-form1-5"></textarea>
-                        </div>
-                        <div class="col-md-12 input-group-btn align-center"><button type="submit" class="btn btn-primary btn-form display-4">ENVIAR</button></div>
+                        <div class="col-auto input-group-btn"><button type="submit" class="btn  btn-white display-4">&nbsp; &nbsp;Eu quero &nbsp;&nbsp;</button></div>
                     </div>
                 </form><!---Formbuilder Form--->
             </div>
@@ -266,132 +417,128 @@
     </div>
 </section>
 
-<section class="progress-bars2 cid-uFjZzuy8Wo mbr-parallax-background" id="progress-bars2-6">
-    
+<section class="progress-bars3 cid-u21TSAmFsq" id="progress-bars3-6">
+ 
      
 
-    <div class="mbr-overlay" style="opacity: 0; background-color: rgb(255, 255, 255);">
-    </div>
-
+    
+    
     <div class="container">
-        <h2 class="mbr-section-title pb-3 align-center mbr-fonts-style display-2"><strong>
-            Porque me escolher</strong></h2>
+        <h2 class="mbr-section-title pb-3 align-center mbr-fonts-style display-2"><strong>Conhecimentos</strong></h2>
 
-        <h3 class="mbr-section-subtitle mbr-fonts-style display-5">No mercado <strong>desde 2007</strong> colaborei com mais de <strong>270 projetos bem sucedidos</strong>, e estou sempre me atualizando e aprimorando as <strong>técnicas e ferramentas que surgem a cada dia</strong>.</h3>
-
-        <div class="row pt-5 mt-5">
-            <div class="col-md-6 text-elements">
-                <h4 class="section-content-title pb-3 align-left mbr-fonts-style display-5"><strong>
-                    Conte comigo!</strong></h4>
-                <p class="section-content-text align-left mbr-fonts-style display-7"><strong>Profissionalismo:&nbsp; </strong>Comprometimento&nbsp;em entregar projetos de alta qualidade, alinhados com suas expectativas.
-<br>
-<br><strong>Criatividade Ilimitada:</strong> Estou pronto para transformar suas visões em realidade, com soluções inovadoras e criativas.
-<br>
-<br><strong>Parceria Estratégica: </strong>Trabalharei em estreita colaboração com você, garantindo que cada projeto atenda às suas necessidades e objetivos.
-<br>
-<br>Descubra o poder do design visual com a <strong>Expressão Visual.</strong> Juntos, vamos criar uma linguagem visual única para a sua marca. <a href="index.html#form1-5" class="text-primary"><strong>Entre em contato</strong></a> conosco para iniciar a jornada da sua <strong>expressão visual única</strong>.</p>
+        <h3 class="mbr-section-subtitle mbr-fonts-style display-5">Na busca pela <strong>excelência</strong>, cada pixel, cada linha e cada escolha de cor são <strong>cuidadosamente ponderados</strong> para criar uma <strong>narrativa visual</strong> coesa e <strong>impactante</strong>.</h3>
+    
+        <div class="media-container-row pt-5 mt-2">
+            <div class="card p-3 align-center">
+                <div class="wrap">
+                    <div class="pie_progress progress1" role="progressbar" data-goal="82">
+                        <p class="pie_progress__number mbr-fonts-style display-5"><strong>50%</strong></p>
+                    </div>
+                </div> 
+                <div class="mbr-crt-title pt-3">
+                    <h4 class="card-title py-2 mbr-fonts-style display-5"><strong>
+                        Design</strong></h4>
+                </div>                 
             </div>
-            <div class="progress_elements col-md-6">
-                <div class="progress1 pb-5">
-                    <div class="title-wrap">
-                        <div class="progressbar-title mbr-fonts-style display-7">
-                            <p>
-                                Programação&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
-                        </div>
-                        <div class="progress_value mbr-fonts-style display-7">
-                            <div class="progressbar-number">
-                            </div>
-                            <span>%</span>
-                        </div>
+
+            <div class="card p-3 align-center">
+                <div class="wrap">
+                    <div class="pie_progress progress2" role="progressbar" data-goal="70">
+                        <p class="pie_progress__number mbr-fonts-style display-5"><strong>60%</strong></p>
                     </div>
-                    <progress class="progress progress-primary " max="100" value="93">
-                    </progress>
-                </div>
-                 
-                <div class="progress2 pb-5">
-                    <div class="title-wrap">
-                        <div class="progressbar-title mbr-fonts-style display-7">
-                            <p>
-                                Aplicações web&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
-                        </div>
-                    <div class="progress_value mbr-fonts-style display-7">
-                        <div class="progressbar-number">
-                        </div>
-                        <span>%</span>
+                </div> 
+                <div class="mbr-crt-title pt-3">
+                    <h4 class="card-title py-2 mbr-fonts-style display-5"><strong>
+                        Programação</strong></h4>
+                </div>                 
+            </div>
+
+            <div class="card p-3 align-center">
+                <div class="wrap">
+                    <div class="pie_progress progress3" role="progressbar" data-goal="56">
+                        <p class="pie_progress__number mbr-fonts-style display-5"><strong>70%</strong></p>
                     </div>
-                    </div>
-                    <progress class="progress progress-primary" max="100" value="84">
-                    </progress>
-                </div>
-                
-                <div class="progress3 pb-5">
-                    <div class="title-wrap">
-                        <div class="progressbar-title mbr-fonts-style display-7">
-                            <p>
-                                Design&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
-                        </div>
-                    <div class="progress_value mbr-fonts-style display-7">
-                        <div class="progressbar-number">
-                        </div>
-                        <span>%</span>
-                    </div>
-                    </div>
-                    <progress class="progress progress-primary" max="100" value="73">
-                    </progress>
-                </div>
-                
-                <div class="progress4 pb-5">
-                    <div class="title-wrap">
-                        <div class="progressbar-title mbr-fonts-style display-7">
-                            <p>
-                                Marketing&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
-                        </div>
-                    <div class="progress_value mbr-fonts-style display-7">
-                        <div class="progressbar-number">
-                        </div>
-                        <span>%</span>
-                    </div>
-                    </div>
-                    <progress class="progress progress-primary" max="100" value="70">
-                    </progress>
-                </div>
+                </div> 
+                <div class="mbr-crt-title pt-3">
+                    <h4 class="card-title py-2 mbr-fonts-style display-5"><strong>
+                        Marketing</strong></h4>
+                </div>                 
+            </div>
+
             
-                <div class="progress5 pb-5">
-                    <div class="title-wrap">
-                        <div class="progressbar-title mbr-fonts-style display-7">
-                            <p>Dominio de ferramentas&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+
+            
+
+            
+        </div>
+</div></section>
+
+<section class="mbr-section form1 cid-u21TUus0Up mbr-parallax-background" id="form1-7">
+
+    
+
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="title col-12 col-lg-8">
+                <h2 class="mbr-section-title align-center pb-3 mbr-fonts-style display-2"><strong>
+                    Vamos conversar</strong></h2>
+                <h3 class="mbr-section-subtitle align-center mbr-light pb-3 mbr-fonts-style display-7">Descubra a diferença que o <strong>profissionalismo pode fazer para a sua presença visual</strong>. Confie no nosso <strong>compromisso</strong> de elevar o design a <strong>novos patamares de excelência</strong>.</h3>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="media-container-column col-lg-8" data-form-type="formoid">
+                <!---Formbuilder Form--->
+                <form action="https://mobirise.com/" method="POST" class="mbr-form form-with-styler" data-form-title="Mobirise Form"><input type="hidden" name="email" data-form-email="true" value="rWXNEuOlki+bM8iXHBiaCEVlOZxaDz1a/AfmoWPcEUas4StlyvigLkIwhKg1d2qurTyYI78ywrI5xe7iA5iLYEPpszLjm85I9RskqUT5CughuZ79RFaebesD6ovXabiN">
+                    <div class="row">
+                        <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Opa! Obrigado por nos contatar, ja recebemo sua mensagem e responderemos rapidinho!</div>
+                        <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">
                         </div>
-                    <div class="progress_value mbr-fonts-style display-7">
-                        <div class="progressbar-number">
+                    </div>
+                    <div class="dragArea row">
+                        <div class="col-md-4  form-group" data-for="name">
+                            <label for="name-form1-7" class="form-control-label mbr-fonts-style display-7"><strong>Nome</strong></label>
+                            <input type="text" name="name" data-form-field="Name" required="required" class="form-control display-7" id="name-form1-7">
                         </div>
-                        <span>%</span>
+                        <div class="col-md-4  form-group" data-for="email">
+                            <label for="email-form1-7" class="form-control-label mbr-fonts-style display-7"><strong>E-mail</strong></label>
+                            <input type="email" name="email" data-form-field="Email" required="required" class="form-control display-7" id="email-form1-7">
+                        </div>
+                        <div data-for="phone" class="col-md-4  form-group">
+                            <label for="phone-form1-7" class="form-control-label mbr-fonts-style display-7"><strong>Tel./WhatsApp</strong></label>
+                            <input type="tel" name="phone" data-form-field="Phone" class="form-control display-7" id="phone-form1-7">
+                        </div>
+                        <div data-for="message" class="col-md-12 form-group">
+                            <label for="message-form1-7" class="form-control-label mbr-fonts-style display-7">💬 &nbsp;<strong>Mensagem</strong></label>
+                            <textarea name="message" data-form-field="Message" class="form-control display-7" id="message-form1-7"></textarea>
+                        </div>
+                        <div class="col-md-12 input-group-btn align-center"><button type="submit" class="btn btn-primary btn-form display-4">Enviar</button></div>
                     </div>
-                    </div>
-                    <progress class="progress progress-primary" max="100" value="95">
-                    </progress>
-                </div>
+                </form><!---Formbuilder Form--->
             </div>
         </div>
     </div>
 </section>
 
-<section class="cid-uFk72YJMFd" id="footer5-8">
+<section class="cid-u21TVOvb8f mbr-parallax-background" id="footer5-8">
 
     
 
-    
+    <div class="mbr-overlay" style="opacity: 0.9; background-color: rgb(35, 35, 35);"></div>
 
     <div class="container">
         <div class="media-container-row">
             <div class="col-md-3">
                 <div class="media-wrap">
                     <a href="index.html#top">
-                       <img src="assets/images/logo.expressaovisual-192x192.png" alt="Expressão Visual - Desde 2007">
+                       <img src="assets/images/logo.expressaovisual-192x192.png" alt="Descubra a diferença que o profissionalismo pode fazer para a sua presença visual. Confie no nosso compromisso de elevar o design a novos patamares de excelência." title="Descubra a diferença que o profissionalismo pode fazer para a sua presença visual. Confie no nosso compromisso de elevar o design a novos patamares de excelência.">
                     </a>
                 </div>
             </div>
             <div class="col-md-9">
-                <p class="mbr-text align-right links mbr-fonts-style display-7">Um profissional pronto <strong>para ajudar você</strong> na jornada de destacar o <br>seu negocio no mundo digital.</p>
+                <p class="mbr-text align-right links mbr-fonts-style display-7">Desde 2007</p>
             </div>
         </div>
         <div class="footer-lower">
@@ -402,11 +549,30 @@
             </div>
             <div class="media-container-row mbr-white">
                 <div class="col-md-6 copyright">
-                    <p class="mbr-text mbr-fonts-style display-7">
-                        © Copyright 2025 <strong>Expressão Visual Desde 2007</strong>&nbsp;<br>Todos os direitos reservados</p>
+                    <p class="mbr-text mbr-fonts-style display-4">
+                        © Copyright 2025 &nbsp;| <a href="index.html#content4-9"><strong>Expressão Visual</strong></a> -&nbsp;Transformando Visões em Imagens. Criando o <strong>Seu Mundo Visual Único.&nbsp;</strong></p>
                 </div>
                 <div class="col-md-6">
-                    
+                    <div class="social-list align-right">
+                        <div class="">
+                            <a href="" target="">
+                                <span class="" style=""></span>
+                            </a>
+                        </div>
+                        <div class="">
+                            <a href="" target="">
+                                <span class="" style=""></span>
+                            </a>
+                        </div>
+                        <div class="">
+                            <a href="" target="">
+                                <span class="" style=""></span>
+                            </a>
+                        </div>
+                        
+                        
+                        
+                    </div>
                 </div>
             </div>
         </div>
@@ -417,15 +583,15 @@
   <script src="assets/web/assets/jquery/jquery.min.js"></script>
   <script src="assets/popper/popper.min.js"></script>
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-  <script src="assets/tether/tether.min.js"></script>
   <script src="assets/smoothscroll/smooth-scroll.js"></script>
   <script src="assets/dropdown/js/nav-dropdown.js"></script>
   <script src="assets/dropdown/js/navbar-dropdown.js"></script>
   <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
   <script src="assets/parallax/jarallax.min.js"></script>
+  <script src="assets/as-pie-progress/jquery-as-pie-progress.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
   <script src="assets/theme/js/script.js"></script>
   <script src="assets/formoid/formoid.min.js"></script>
-  
   
   
 </body>
