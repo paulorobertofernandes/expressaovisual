@@ -30,6 +30,93 @@
 <body>
   <section class="menu cid-v799CzaMpD" once="menu" id="menu2-0">
 
+<!-- OVERLAY (FUNDO ESCURO) -->
+<div id="popupOverlay">
+  <div id="popupBox">
+    
+    <!-- BOTÃO FECHAR -->
+    <span id="popupClose">&times;</span>
+
+    <!-- IMAGEM COM LINK -->
+    <a href="https://paulorobertofernandes.github.io/expressaovisual/index.html#form1-6" target="_blank" id="popupLink">
+      <img src="assets/images/2026.gif" alt="Popup Promocional">
+    </a>
+
+  </div>
+</div>
+
+<style>
+/* FUNDO ESCURO */
+#popupOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+/* CAIXA DO POPUP */
+#popupBox {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+/* IMAGEM */
+#popupBox img {
+  width: 90%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+/* BOTÃO FECHAR */
+#popupClose {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  background: #000;
+  color: #fff;
+  font-size: 22px;
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  line-height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* RESPONSIVO EXTRA */
+@media (max-width: 480px) {
+  #popupClose {
+    top: -10px;
+    right: -10px;
+  }
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const overlay = document.getElementById("popupOverlay");
+  const closeBtn = document.getElementById("popupClose");
+  const link = document.getElementById("popupLink");
+
+  closeBtn.addEventListener("click", function () {
+    overlay.style.display = "none";
+  });
+
+  link.addEventListener("click", function () {
+    overlay.style.display = "none";
+  });
+});
+</script>
+
+
 
 <!-- FONT AWESOME (ÍCONE WHATSAPP) -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
