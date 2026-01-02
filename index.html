@@ -101,16 +101,21 @@ document.addEventListener("DOMContentLoaded", function () {
   const closeBtn = document.getElementById("popupClose");
   const link = document.getElementById("popupLink");
 
-  closeBtn.addEventListener("click", function () {
-    overlay.style.display = "none";
-  });
+  // Bloqueia o scroll do fundo
+  document.body.style.overflow = "hidden";
 
-  link.addEventListener("click", function () {
+  function closePopup() {
     overlay.style.display = "none";
-  });
+    document.body.style.overflow = "auto";
+  }
+
+  closeBtn.addEventListener("click", closePopup);
+
+  if (link) {
+    link.addEventListener("click", closePopup);
+  }
 });
 </script>
-
 
 
 <!-- FONT AWESOME (ÍCONE WHATSAPP) -->
