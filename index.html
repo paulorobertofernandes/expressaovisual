@@ -45,14 +45,13 @@
   </div>
 </div>
 
-<style>
-/* FUNDO ESCURO */
+<style>/* FUNDO ESCURO */
 #popupOverlay {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background: rgba(0,0,0,0.75);
   display: flex;
   align-items: center;
@@ -63,14 +62,16 @@
 /* CAIXA DO POPUP */
 #popupBox {
   position: relative;
-  max-width: 90%;
-  max-height: 90%;
+  width: 90vw;
+  max-width: 650px;
 }
 
 /* IMAGEM */
 #popupBox img {
-  width: 90%;
+  width: 100%;
   height: auto;
+  max-height: 80vh;
+  object-fit: contain;
   display: block;
   border-radius: 8px;
 }
@@ -89,16 +90,10 @@
   line-height: 36px;
   border-radius: 50%;
   cursor: pointer;
-}
-
-/* RESPONSIVO EXTRA */
-@media (max-width: 480px) {
-  #popupClose {
-    top: -10px;
-    right: -10px;
-  }
+  z-index: 10;
 }
 </style>
+
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
